@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSHS Hackathon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="intro">
+        <b><p>Youth Mental Health</p></b>
+       <b><u><p style ="margin:0;display:inline;float:left;font-size: 0.75em;cursor: pointer;" onclick=volunteer()>Volunteer</p></u></b>
+       <b><u><p style ="margin:0;display:inline;float:right;font-size: 0.75em;cursor: pointer;" onclick=information()>Info</p></u></b>
+        <b><p style ="margin-right: 50%; margin-left: 45%; font-size: 0.75em; cursor: pointer;" onclick=game()>Game</p></b>
+    </div>
+    <div class="Information2" id="info">
+        <div class="firstPart">
+            <b><u><p>Why You Should Care</p></u></b>
+            <p>Future Well Being</p>
+        <div class="info1">
+            <img src="npr.brightspotcdn.jpg" style="width: 15%; height: auto; float: left; display: flex; padding: 25px;" alt="">
+            <p style="justify-content: center; padding: 25px;">Future well-being, in the context of youth mental health, pertains to the lasting positive impact that mental and emotional well-being during adolescence can have on various aspects of an individual's life as they transition into adulthood. It encompasses the development of a strong sense of identity, self-esteem, and resilience, contributing to life satisfaction, academic and career success, healthy relationships, and overall physical and mental health. Investing in positive mental health experiences during youth lays the foundation for a fulfilling and empowered adult life, fostering personal growth, societal contributions, and a higher quality of life in the long term.</p>
+        </div>
+        </div>
+        <div class="secondPart">
+            <b><u><p>What is the problem?</p></u></b>
+            <p>The Main Problems</p>
+            <div class="info2">
+                <img src="mentalHealth.jpg" style="width: 25%; height: auto; float: right; display: flex; padding: 25px;" alt="">
+                <p style="justify-content: center; padding: 25px;">Youth mental health faces multifaceted challenges, including the pervasive stigma surrounding mental health issues, which discourages open dialogue and timely intervention. A lack of awareness about mental health symptoms and available resources further hinders early recognition and appropriate support. Social pressures, such as academic expectations and societal norms, contribute to stress and anxiety among young people. Bullying, both in-person and online, exacerbates mental health concerns, leading to feelings of isolation. Dysfunctional family environments, trauma, and adverse childhood experiences amplify the risk of mental health disorders. To address these issues, a comprehensive approach is needed, encompassing destigmatization efforts, widespread education, the promotion of supportive environments, and improved accessibility to mental health services for youth.</p>
+            </div>
+        </div>
+        <div class="thirdPart">
+            <b><u><p>How YOU can help</p></u></b>
+            <div class="info3">
+                <ul>
+                    <li><dt>Open Communication</dt>
+                    <dd>- Create a non-judgmental space where the individual feels comfortable discussing their feelings and experiences. Encourage them to share their thoughts and concerns, and listen attentively without offering immediate solutions.</dd>
+                    <li><dt>Offer Emotional Support</dt>
+                    <dd>- Express empathy and validate the person's feelings. Let them know that you are there for them and that their emotions are valid. Avoid minimizing their experiences or suggesting that they should just "get over it."</dd>
+                    <li><dt>Encourage Professional Help</dt>
+                    <dd>- Suggest seeking help from mental health professionals, such as therapists, counselors, or psychiatrists. Offer assistance in finding appropriate resources and, if necessary, accompany them to appointments for support.</dd>
+                    <li><dt>Promote Self-Care</dt>
+                    <dd>- Encourage healthy habits and self-care practices. This may include regular exercise, proper nutrition, adequate sleep, and activities that bring joy and relaxation. These habits can positively impact mental well-being.</dd>
+                    <li><dt>Be Patient and Persistent</dt>
+                    <dd>- Recovery from mental health challenges is often a gradual process. Be patient, persistent, and consistent in your support. Check in regularly, and let them know that you are there for the long haul.</dd>
+                    <li><dt>Raise Awareness</dt>
+                    <dd>- Contribute to destigmatizing mental health by promoting open conversations and raising awareness in your community. This can help create an environment where individuals feel more comfortable seeking help.</dd>
+                    <li><dt>Volunteer Today</dt>
+                    <dd>- Help us raise awareness and support kids going through hard times, click the volunteer page above to show your support. Volunteer TODAY!</dd>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class = "forms" id="forms">
+
+    
+        <form class="form" action="">
+            <div class="names">
+                <p>First Name:</p>
+                <input class="firstName" id="firstName" type="text" maxlength="50" onkeypress="return onlyAlphabets(event)" value="" required>
+                <p>Last Name:</p>
+                <input class="lastName" id="lastName" type="text" maxlength="50" onkeypress="return onlyAlphabets(event)" value="" required>
+            </div>
+            <div class="phone">
+                <p>Phone Number:</p>
+                <b>+</b><input type="text" value="" id="phone" minlength="9" maxlength="11" onkeypress="return onlyNumber(event)" required>
+            </div>
+            <div class="gender" aria-required="true" id="gender">
+                <p>Please Select One:</p>
+                <input type="radio" id="male" value="Male" name="gender" required>
+                <label for="male">Male</label>
+                <br>
+                <input type="radio" id="female" value="Female" name="gender">
+                <label for="female">Female</label>
+                <br>
+                <input type="radio" id="other" value="Other" name="gender">
+                <label for="other">Other</label>
+            </div>
+            <br>
+            <div class="Terms" aria-required="true">
+                <p>Are you okay with sending this Information to a database:</p>
+                <input id="database" type="checkbox" value="Yes" required>
+                <label for="database">Yes</label>
+            </div>
+            <div class="submit">
+                <br>
+                <button class="btn" id="btn" onclick=btnClick()><b>Submit</b></button>
+                <button class="btn" id="cancel" onclick=destroy()><b>Cancel</b></button>
+            </div>
+
+        </form>
+        <br>
+        <div id="h"></div>
+        <table class="Information" id="table">
+            <tr class="headings">
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Phone Number</th>
+                <th>Gender</th>
+                <th>Database Acceptable</th>
+                <th>Delete</th>
+            </tr>
+        </table>
+        <div class="show" id="show">
+            <button class="showbtn" onclick="show()">Show Database</button>
+            <button class="closebtn" onclick="closedb()">Close Database</button>
+        </div>
+    </div>
+    <div class="gam" id="game">
+        <p style = "color: rgb(50, 50, 255);">Press Start and click Up Arrow to jump and avoid all of the cyber-bullying!</p>
+        <div class="game">
+            <div id="character"></div>
+            <div id="block"></div>
+        </div>
+        <p style = "color: rgb(50, 50, 255);">Score: <span id="scoreSpan"></span></p>
+    <div class="buttons">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+    </div>
+    </div>
+
+    <script src = "script.js"></script>
+
+    
+    
+</body>
+</html>

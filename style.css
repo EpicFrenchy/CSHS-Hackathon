@@ -1,0 +1,168 @@
+*
+{
+    font-family: circular;
+
+}
+body
+{
+    background-color: aliceblue;
+}
+.intro
+{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 5px solid black;
+    font-size: 3.5em;
+    padding: 10px;
+    color: rgb(50, 50 ,255);
+    transition: 0.5s;
+    background: url(desktop-wallpaper-neurons-brain-cells.jpg);
+}
+.intro:hover{
+    background-color: rgb(50, 50, 255);
+    color: white;
+}
+.firstPart, .secondPart, .thirdPart
+{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 5px;
+    color: rgb(50, 50 ,255);
+    transition: 0.5s;
+    
+}
+.info1, .info2, .info3
+{
+    font-size: 0.75em;
+    text-align: left;
+}
+
+.firstPart:hover, .secondPart:hover, .thirdPart:hover
+{
+    background-color: rgb(50, 50,255);
+    color: white;
+}
+.form {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 5px solid black;
+    width: 400px;
+    padding: 10px;
+    background: aliceblue;
+    color: rgb(50, 50 ,255);
+}
+.btn {
+    background-color: aliceblue;
+    border: none;
+    transition: 0.5s;
+    padding: 5px;
+    color: rgb(50, 50 ,255);
+}
+.btn:hover {
+    background-color: rgb(50, 50 ,255);
+    color: aliceblue;
+}
+.Information {
+    visibility: hidden;
+    width: 100%;
+    border: 2px solid black;
+}
+th {
+    border: 1px solid black;
+}
+td {
+    border: 1px solid black;
+}
+.showbtn, .closebtn {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    background-color: peachpuff;
+    border: 2px solid black;
+    transition: 0.5s;
+}
+.forms{
+    display: none;
+    padding: 25px;
+}
+.game {
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    position: relative;
+}
+
+#character {
+    width: 20px;
+    height: 50px;
+    background-image: url(https://static.thenounproject.com/png/203593-200.png);
+    background-size: 150% 100%;
+    position: relative;
+    top: 150px;
+}
+
+.animate {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 100px;
+    }
+    70% {
+        top: 100px;
+    }
+    100% {
+        top: 150px;
+    }
+}
+
+#block {
+    width: 20px;
+    height: 20px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png);
+    background-size: cover;
+    position: relative;
+    top: 130px;
+    left: 500px;
+    animation: block 1s infinite linear;
+}
+
+@keyframes block {
+    0% {
+        left: 500px
+    }
+    100% {
+        left: -20px
+    }
+}
+
+p {
+    text-align: center;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+button {
+    margin: 5px;
+    color: rgb(50, 50 ,255);
+}
+.gam{
+    display: none;
+}
